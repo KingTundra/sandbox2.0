@@ -55,6 +55,9 @@ abbr,acronym{
     width: 100%;
     text-align: right;
 }
+body {
+  position: relative;
+}
 
 /*--MOBNAVICON--*/
 #mobnavicon{
