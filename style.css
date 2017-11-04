@@ -1,0 +1,554 @@
+/*--- CSS RESET ---*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ 
+	margin:0;
+	padding:0;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img{ 
+	border:0;
+}
+address,caption,cite,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+body {
+    position: relative;
+  }
+  
+/*IE fix*/
+#rally, #quote1, #route, #team, #goals, #sponsors, #contact, #quote2{
+    overflow: hidden;
+}
+
+/*--- NAVBAR TYPE SELECTOR---*/
+@media screen and (min-width: 0px) and (max-width: 759px) {
+    .navbutton {
+        display: none;
+    }
+} 
+
+@media screen and (min-width: 760px) {
+    .mobilenav {
+        display: none;
+    }
+}
+
+/*-- MOBILENAV--*/
+.mobilenav{
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    text-align: right;
+}
+
+/*--MOBNAVICON--*/
+#mobnavicon{
+    width: 10%;
+    max-width: 40px;
+    height: auto;
+    margin: 15px 15px 0 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+}
+
+#mobnavicon:hover{
+    box-shadow: 2px 2px 1px black;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#chkbox{
+    display: none;
+}
+/*--NAVEXPAND--*/
+.navexpandlist{
+    max-width: 50%;
+    float: right;
+    margin: 0 5px 0 0;
+    list-style: none;
+    padding: 5px 20px 5px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+  
+.navexpand {
+    max-height: 0;
+    transition: max-height 0.3s linear;
+    overflow: hidden;
+  }
+  
+#chkbox:checked ~ .navexpand {
+    max-height: 500px;   
+  }
+
+.navexpand li{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.navexpand li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.navexpand #navdonate{
+    color: red;
+    font-weight: bold;
+}
+
+.navexpand #navdonate:hover{
+    background-color: red;
+    color: white;
+}
+
+/*-- REGULARNAV--*/
+.navigation {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navigation ul {
+    text-align: center;
+}
+
+.navigation li {
+    font-size: 1em;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    box-sizing: border-box;
+    text-transform: uppercase; 
+    display: inline-block;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbutton li:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.donate{
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 0 0 20px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.donate:hover{
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid red;
+    transition: 0.2s;
+}
+
+/*--- MAIN ---*/
+
+h1{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 3.5em;
+    font-weight: "300"
+}
+
+p, li{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*--HEADER--*/
+#block_landing{
+    background-image: url(./img/backgroundlanding.jpg);
+    min-height: 700px;
+}
+
+.landingcontent{
+    padding: 150px 0 100px 0;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#logo{
+    width: 100%;
+}
+
+.land-left{
+    max-width: 400px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.land-right{
+    max-width:400px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px black;
+}
+
+/*RALLY break*/
+.quicknumberscont{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 0 0 0;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.quicknumbers h6{
+    font-family: Bungee, 'cursive';
+    font-size: 2.5em;
+    padding: 20px 0 0 0;
+    line-height: 1em;
+}
+
+.quicknumbers p{
+    font-family: Bungee, 'cursive';
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.quicknumbers{
+    padding: 10px 10px;
+    margin: 5px;
+    border: 3px solid black;
+    min-width: 100px;
+    height: square;
+}
+
+.quicknumbers:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+/*spacertexts*/
+.spacertext{
+    padding: 50px 5% 50px 5%;
+    height: auto !important;
+}
+
+.spacertext h1{
+    line-height: 1em;
+    padding: 0 0 15px 0;    
+}
+
+.spacertext .biggerp{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    column-count: 1;
+}
+
+.spacertext p {
+    font-size: 1.25em;
+    word-spacing: 3px;
+    padding: 0 5% 0 5%;
+    margin-bottom: 1em;
+    column-count:2;
+    column-gap: 60px;
+    column-rule: 1px solid #ccc;
+    column-width: 300px;
+}
+
+#rules {
+    padding: 0 0 0 10%;
+    font-weight: bold;
+}
+
+/*quotebox1*/
+#quote1{
+    background-image: url(./img/backgroundquote1.jpg);
+    min-height: 400px;
+}
+
+.quoteline{
+    position: relative;
+    padding: 50px 0 50px 10%;
+    margin: 100px 50px 100px 50px;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #ccc;
+}
+
+h3{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2em;
+    line-height: 1.25em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+h4{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+h5{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2em;
+    line-height: 1em;
+    padding: 20px 0 0 0;
+}
+
+/*TEAM*/
+#meetus{
+    background-image: url(./img/backgroundteam.jpg);
+    min-height: 700px;
+}
+
+.content{
+    padding: 100px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content h1{
+    line-height: 1em;
+    padding: 0 0 15px 0;
+}
+
+.cont-left, .cont-right{
+    margin: 20px 0;
+    padding: 30px 45px 10px 45px;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;    
+}
+
+.thumb{
+    width: 50%;
+    border-radius: 100px;
+}
+
+/*DOELEN*/
+#goalsexplained{
+    background-image: url(./img/backgroundgoals.jpg);
+    min-height: 700px;
+}
+
+.goals-cont-left, .goals-cont-right{
+    margin: 20px 0;
+    padding: 30px 45px 10px 45px;
+    max-width: 400px;
+    color: white;
+    text-align: center;
+}
+
+.goals-cont-left{
+      background-color: rgba(227, 8, 32, 0.8);
+}
+.goals-cont-right{
+    background-color: rgba(177, 210, 153, 0.8);
+}
+
+/*QUOTEBOX2*/
+#quote2{
+    background-image: url(./img/backgroundquote2.jpg);
+    min-height: 400px;
+}
+
+/*CONTACT*/
+#contact{
+    display: block;
+    background-image: linear-gradient(to bottom, white, grey);
+    padding: 50px 5% 20px 5%;  
+    column-count:2;
+    column-gap: 60px;
+    Column-rule: 1px solid #ccc;
+    column-width: 200px;
+}
+
+.contact1 .biggerp{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.contact1 p {
+    font-size: 1.25em;
+    word-spacing: 3px;
+    padding: 0 5% 0 5%;
+    margin-bottom: 1em;
+}
+
+.contact1{
+    break-inside: avoid;     
+}
+
+.social{
+    margin: 100px 30px 0 0;
+}
+
+/*--DONEERPAGINA--*/
+h6{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 3.5em;
+    font-weight: "300";
+    line-height: 1em;
+    padding: 0 5px 10px 5px;
+}
+
+#donatelanding{
+    background-image: url(./img/mrlaunch.jpg);
+    min-height: 400px;
+    display: block;
+    padding: 5%;
+}
+
+.layover{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: static;
+}
+
+.donatenav{
+    position: fixed;    
+    height: auto;
+    padding: 0 15px;
+    margin: 15px 15px;
+    max-width: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 200px;
+}
+.donatenav:hover{
+    box-shadow: 2px 2px 1px black;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.donatetext{
+    padding: 50px 5% 50px 5%;
+    height: auto;
+}
+.donatetext h1{
+    line-height: 1em;
+    padding: 0 0 15px 0;    
+    column-count: 1;
+}
+
+.donatetext .biggerp{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    column-count: 1;
+}
+
+.donatecolumn{
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 20px 0 0 0;
+    margin: 30px 0 0 0;
+    column-count:2;
+    column-gap: 60px;
+    column-rule: 1px solid rgba(0, 0, 0, 0.3);
+    column-width: 300px;
+}
+
+.donatetext h2{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: "300";
+    font-size: 2.5em;
+    line-height: 1em;
+    padding: 15px 0 15px 0;  
+}
+
+.donatetext p {
+    font-size: 1.25em;
+    word-spacing: 3px;
+    padding: 0 5% 0 5%;
+    break-inside: avoid;
+}
+
+.donatetext h4{
+    color: black;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    padding: 10px 5% 10px 5%;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+#doneerpaypal{
+    margin: 0 0 100px 0;
+    padding: 0 0 100px 0;
+}
+
+.donatemeter{
+    font-weight: bold;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 20px 0 100px 0;
+}
+
+.container{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 40px;
+}
+
+/*--PAS WIDTH AAN OM TUSSENSTAND TE UPDATEN--*/
+.bereikt{
+    width: 1%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    background-color: rgba(255, 0, 30, 0.8);
+    height: 40px;
+    overflow: visible;
+}
+
+#zero{
+    display: inline-block;
+    padding: 0;
+}
+#hundred{
+    padding: 0;
+    float: right;
+}
